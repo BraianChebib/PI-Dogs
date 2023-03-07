@@ -1,0 +1,33 @@
+.mainContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  position: relative;
+
+  margin-right: 4rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  --bg: #1e1d1d;
+  --hover-bg: #e42326;
+  --hover-text: #151515;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
